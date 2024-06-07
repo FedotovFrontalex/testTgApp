@@ -14,7 +14,7 @@ function App() {
   
   return (
     <>
-      <Route index element={<TodoList />}/>
+      <Route path={'/'} element={<TodoList />}/>
     </>
   )
 }
