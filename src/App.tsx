@@ -7,7 +7,8 @@ function App() {
   
   return (
     <>
-      <Route index element={<TodoList />}/>
+      HELLO
+      {/*<Route index element={<TodoList />}/>*/}
     </>
   )
 }
