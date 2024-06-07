@@ -1,7 +1,7 @@
 
 import './App.css';
-import {TodoList} from "./todoList.tsx";
-import {Route} from "react-router-dom";
+//import {TodoList} from "./todoList.tsx";
+//import {Route} from "react-router-dom";
 
 function App() {
   
