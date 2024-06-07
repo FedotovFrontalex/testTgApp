@@ -2,8 +2,8 @@
 import './App.css';
 import {useTelegram} from "./useTelegram.ts";
 import {useEffect} from "react";
-//import {TodoList} from "./todoList.tsx";
-//import {Route} from "react-router-dom";
+import {TodoList} from "./todoList.tsx";
+import {Route} from "react-router-dom";
 
 function App() {
   const {tg} = useTelegram();
@@ -14,8 +14,7 @@ function App() {
   
   return (
     <>
-      HELLO WORLD
-      {/*<Route index element={<TodoList />}/>*/}
+      <Route index element={<TodoList />}/>
     </>
   )
 }
