@@ -1,22 +1,25 @@
 
 import './App.css';
 import {useTelegram} from "./useTelegram.ts";
-import {useEffect} from "react";
-import {TodoList} from "./todoList.tsx";
-//import {Route} from "react-router-dom";
+import {useEffect, useState} from "react";
 
 function App() {
   const {tg} = useTelegram();
+  const [count, setCount] = useState<number>(0)
   
   useEffect(() => {
     tg.ready();
   }, [])
   
+  const clickHandler = () => {
+    setCount((prev) => prev + 1);
+  }
+  
   return (
-    <>
-      <TodoList />
-      {/*<Route path={'/'} element={}/>*/}
-    </>
+    <div className='wrapper'>
+      <span className='count'>{count}</span>
+      <button className='button' onClick={clickHandler}>click</button>
+    </div>
   )
 }
 
