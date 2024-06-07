@@ -3,7 +3,7 @@ import './App.css';
 import {useTelegram} from "./useTelegram.ts";
 import {useEffect} from "react";
 import {TodoList} from "./todoList.tsx";
-import {Route} from "react-router-dom";
+//import {Route} from "react-router-dom";
 
 function App() {
   const {tg} = useTelegram();
@@ -14,7 +14,8 @@ function App() {
   
   return (
     <>
-      <Route path={'/'} element={<TodoList />}/>
+      <TodoList />
+      {/*<Route path={'/'} element={}/>*/}
     </>
   )
 }
