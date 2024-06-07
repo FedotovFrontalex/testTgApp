@@ -1,16 +1,13 @@
 
 import './App.css';
-
-const tg = window.Telegram.WebApp;
+import {TodoList} from "./todoList.tsx";
+import {Route} from "react-router-dom";
 
 function App() {
-  const onClose = () => {
-    tg.close();
-  };
   
   return (
     <>
-      <button onClick={onClose}>Закрыть</button>
+      <Route index element={<TodoList />}/>
     </>
   )
 }
